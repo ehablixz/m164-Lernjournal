@@ -1,0 +1,9 @@
+ALTER TABLE tbl_fahrer
+DROP COLUMN Name,
+DROP COLUMN Vorname,
+DROP COLUMN Telefonnummer;
+
+ALTER TABLE tbl_disponent
+DROP COLUMN Name,
+DROP COLUMN Vorname,
+DROP COLUMN Telefonnummer;

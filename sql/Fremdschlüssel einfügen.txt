@@ -1,0 +1,11 @@
+-- Fahrer referenziert MA_ID aus tbl_mitarbeiter
+ALTER TABLE tbl_fahrer
+ADD COLUMN MA_ID INT,
+ADD CONSTRAINT fk_fahrer_mitarbeiter
+    FOREIGN KEY (MA_ID) REFERENCES tbl_mitarbeiter(MA_ID);
+
+-- Disponent referenziert MA_ID aus tbl_mitarbeiter
+ALTER TABLE tbl_disponent
+ADD COLUMN MA_ID INT,
+ADD CONSTRAINT fk_disponent_mitarbeiter
+    FOREIGN KEY (MA_ID) REFERENCES tbl_mitarbeiter(MA_ID);
